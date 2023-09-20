@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_jefe_general"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.colpex20app_firebase.JefeProducion.FragmenContenido.FragmentInicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_trabajadores"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.FragmenContenido_op.FragmentTrabajores_op"
+        android:label="fragment_trabajores_op"
+        tools:layout="@layout/fragment_trabajores_op" />
+    <fragment
+        android:id="@+id/nav_observacion"
+        android:name="com.example.colpex20app_firebase.JefeGeneral.FragmentContenido_General_Jefe.FragmentObservacion_Jefe_General"
+        android:label="fragment_observacion__jefe__general"
+        tools:layout="@layout/fragment_observacion__jefe__general" />
+    <fragment
+        android:id="@+id/nav_produccion"
+        android:name="com.example.colpex20app_firebase.JefeGeneral.FragmentContenido_General_Jefe.FragmentProduccion_Jefe_General"
+        android:label="fragment_produccion__jefe__general"
+        tools:layout="@layout/fragment_produccion__jefe__general" >
+        <action
+            android:id="@+id/action_nav_produccion_to_panelAgregarDatos2"
+            app:destination="@id/panelAgregarDatos" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.example.colpex20app_firebase.JefeGeneral.FragmentContenido_General_Jefe.FragmentUsuario_Jefe_General"
+        android:label="fragment_usuario__jefe__general"
+        tools:layout="@layout/fragment_usuario__jefe__general" />
+    <activity
+        android:id="@+id/panelAgregarDatos"
+        android:name="com.example.colpex20app_firebase.JefeProducion.PanelAgregarDatos"
+        android:label="activity_panel_agregar_datos"
+        tools:layout="@layout/activity_panel_agregar_datos" />
+</navigation>

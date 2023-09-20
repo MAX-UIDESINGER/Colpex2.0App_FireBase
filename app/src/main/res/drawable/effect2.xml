@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:state_pressed="true">
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <stroke
+            android:color="#B4B2B2"
+            android:width="2dp"/>
+        <corners
+            android:radius="20dp"/>
+        <item
+            android:icon="@drawable/ic_fluent_clipboard_checkmark_24_regular" />
+    </shape>
+
+
+</item>
+
+</selector>

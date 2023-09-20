@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/materialCardViewFilledStyle"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:backgroundTint="@color/colorButtonText"
+    android:checkable="true"
+    android:elevation="0dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rald"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemMinuto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/item_count"
+                android:backgroundTint="#F0EFF4"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/expand_collapse_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="6dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_fluent_chevron_up_24_regular" />
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/expand_collapse_icon"
+                android:src="@drawable/vectoruser"
+                app:civ_border_color="#F1F3F4"
+                app:civ_border_width="2dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="false"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_toEndOf="@+id/expand_collapse_icon"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/ivMenu"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorButtonText"
+                android:drawableEnd="@drawable/ic_fluent_more_vertical_28_regular"
+                android:padding="10dp"
+                app:cornerRadius="60dp" />
+
+
+            <TextView
+                android:id="@+id/NameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/userImage"
+                android:fontFamily="@font/san_francisco"
+                android:text="name "
+                android:textColor="?android:textColorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaTrabjo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameUser"
+                android:layout_alignParentLeft="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-21dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/NameUser"
+                android:layout_toRightOf="@+id/NameUser"
+                android:text=" (Operador)"
+                android:textColor="?android:textColorSecondary" />
+
+            <ImageView
+                android:id="@+id/txvfechatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTrabjo"
+                android:layout_gravity="left"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_fluent_calendar_clock_24_regular"
+                app:tint="@color/colorEditText" />
+
+            <TextView
+                android:id="@+id/txvfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTrabjo"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/txvfechatext"
+                android:layout_toRightOf="@+id/txvfechatext"
+                android:fontFamily="@font/san_francisco"
+                android:text="13/09/2022"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Lote1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Lote:  "
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvnumerlote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_gravity="left"
+                android:layout_marginStart="-2dp"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/Lote1"
+                android:layout_toRightOf="@+id/Lote1"
+                android:text="0001 "
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#CAC9C9" />
+
+            <TextView
+                android:id="@+id/Reactor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="10dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Reactor:  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvReactor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/Reactor1"
+                android:layout_toRightOf="@+id/Reactor1"
+                android:fontFamily="@font/san_francisco"
+                android:text="3"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/Batch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvReactor"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:text="Batch:  "
+                android:textSize="15sp"
+                android:textColor="?android:textColorSecondary" />
+
+            <TextView
+                android:id="@+id/txvBatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvReactor"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toEndOf="@+id/Batch1"
+                android:layout_toRightOf="@+id/Batch1"
+                android:fontFamily="@font/san_francisco"
+                android:text="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/Carga1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvBatch"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Carga:  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvCarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvBatch"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/Carga1"
+                android:layout_toRightOf="@+id/Carga1"
+                android:fontFamily="@font/san_francisco"
+                android:text="12.306"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/Vacio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvCarga"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Vacio:  "
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txvVacio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvCarga"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/Vacio1"
+                android:layout_toRightOf="@+id/Vacio1"
+                android:fontFamily="@font/san_francisco"
+                android:text="30"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvVacio_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvCarga"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvVacio"
+                android:layout_toRightOf="@+id/txvVacio"
+                android:fontFamily="@font/san_francisco"
+                android:text=" pul Hg"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/TempTrabajo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvVacio"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Temp. Trabajo:  "
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txvTemp_Trabajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvVacio"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/TempTrabajo1"
+                android:layout_toRightOf="@+id/TempTrabajo1"
+                android:fontFamily="@font/san_francisco"
+                android:text="30"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTempTrabajo_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvVacio"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvTemp_Trabajo"
+                android:layout_toRightOf="@+id/txvTemp_Trabajo"
+                android:fontFamily="@font/san_francisco"
+                android:text="ºC"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvTemp_Trabajo"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+            <TextView
+                android:id="@+id/Arcilla1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:text="Arcilla:  "
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txvArcilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/Arcilla1"
+                android:layout_toRightOf="@+id/Arcilla1"
+                android:fontFamily="@font/san_francisco"
+                android:text="30"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvArcilla_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvArcilla"
+                android:layout_toRightOf="@+id/txvArcilla"
+                android:fontFamily="@font/san_francisco"
+                android:text="Kg"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/LoteArcilla1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvArcilla"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Lote:  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvLoteArcilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvArcilla"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/LoteArcilla1"
+                android:layout_toRightOf="@+id/LoteArcilla1"
+                android:fontFamily="@font/san_francisco"
+                android:text="PEBJ025503"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvLoteArcilla"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+
+            <TextView
+                android:id="@+id/CarbonActivado1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Carbon Activado:  " />
+
+            <TextView
+                android:id="@+id/txvCarbon_Activado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/CarbonActivado1"
+                android:layout_toRightOf="@+id/CarbonActivado1"
+                android:fontFamily="@font/san_francisco"
+                android:text="91"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvCarbon_Activado_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvCarbon_Activado"
+                android:layout_toRightOf="@+id/txvCarbon_Activado"
+                android:fontFamily="@font/san_francisco"
+                android:text="Kg"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tlote2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvCarbon_Activado"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Lote:  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvcarbonLote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvCarbon_Activado"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/tlote2"
+                android:layout_toRightOf="@+id/tlote2"
+                android:fontFamily="@font/san_francisco"
+                android:text="8021040479"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvcarbonLote"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+            <TextView
+                android:id="@+id/silice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Silice:  "
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/txvsilice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/silice2"
+                android:layout_toRightOf="@+id/silice2"
+                android:fontFamily="@font/san_francisco"
+                android:text="0.10"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvsilice_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvsilice"
+                android:layout_toRightOf="@+id/txvsilice"
+                android:fontFamily="@font/san_francisco"
+                android:text="Kg"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/silicelote3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvsilice"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Lote:  "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvsilicelote"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvsilice"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="-25dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/silicelote3"
+                android:layout_toRightOf="@+id/silicelote3"
+                android:fontFamily="@font/san_francisco"
+                android:text="151021"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvsilicelote"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+            <TextView
+                android:id="@+id/FFAFinal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="FFA Final:  " />
+
+            <TextView
+                android:id="@+id/txvFFAFinal"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="-25dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/FFAFinal1"
+                android:layout_toRightOf="@+id/FFAFinal1"
+                android:fontFamily="@font/san_francisco"
+                android:text="0.28"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ColorFinal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvFFAFinal"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Color Final:  " />
+
+            <TextView
+                android:id="@+id/txvColorFinal"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvFFAFinal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="-25dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/ColorFinal1"
+                android:layout_toRightOf="@+id/ColorFinal1"
+                android:fontFamily="@font/san_francisco"
+                android:text="3.6"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/AnisidinaFinal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvColorFinal"
+                android:layout_gravity="left"
+                android:layout_marginLeft="54dp"
+                android:textColor="?android:textColorSecondary"
+                android:text="Anisidina Final:  " />
+
+            <TextView
+                android:id="@+id/txvAnisidinaFinal"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvColorFinal"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="-25dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/AnisidinaFinal1"
+                android:layout_toRightOf="@+id/AnisidinaFinal1"
+                android:fontFamily="@font/san_francisco"
+                android:text="5.55"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

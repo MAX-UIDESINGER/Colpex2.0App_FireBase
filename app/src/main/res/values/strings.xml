@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Colpex2.0</string>
+    <string name="copyright_2022_colpex_s_a_c">copyright © 2022 colpex S.A.C</string>
+    <string name="todos_los_derechos_resvados_polica_de_privacidad">Todos los derechos Resvados.Polica de Privacidad</string>
+    <string name="observaci_n">Observación</string>
+    <string name="tituloBienvenido">¡bienvenido! </string>
+    <string name="ContenidoBienvenida">¡Disfruta de los servicios de trabajar con él envió de información en tiempo real! Obtenga más información de lo que ofrece la aplicación Colpex.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tituloAutomatiza">Automatiza las listas de datos</string>
+    <string name="ContenidoAutomatiza">Cambia entre diferentes opciones y acciones peculiares para una gestión rápida de tu información con el objetivo de tener ordenado tus registros de trabajo. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tituloDatos"> Datos en tiempo real </string>
+    <string name="ContenidoDatos">Los datos que registres desde la aplicación Colpex podrán ser ingresados en tiempo real con el objetivo que los demás usuarios puedan ver lo que has ingresado y trabajar más rápido.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tituloresponsive">Aplicación responsive</string>
+    <string name="Contenidoresponsive">La aplicación esta para todo tipo de pantallas como dispositivos como tables y celulares que tenga como principal el sistema Android. </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="titulonotificado">Ser notificado</string>
+    <string name="Contenidonotificado">Puede obtener toda la información sobre sus cambios de información y recibir notificaciones de cualquier actividad o alertas de cambio de tus datos.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tituloenlínea">Servicio en línea </string>
+    <string name="Contenidolínea">La aplicación esta conectada con el mejor servicio en línea llamada Firebase con la información orientada a administrar tus datos desde todo el país.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tituloBúsquedas">Búsquedas más rápidas </string>
+    <string name="ContenidoBúsquedas">La búsqueda de la información tendrá una facilidad de registro de todos los datos que estén almacenadas en la aplicación Colpex.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="producci_n">Producción</string>
+    <string name="inicio">Inicio</string>
+    <string name="inicio_op">Inicio_op</string>
+    <string name="trabajadores">Trabajadores</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Agregar" />
+    <string name="Observación" />
+    <string name="Trabajadores" />
+    <string name="Desgomado">Desgomado</string>
+    <string name="Neutralizado">Neutralizado</string>
+    <string name="Blanqueado">Blanqueado</string>
+    <string name="usuario">usuario</string>
+    <string name="Reportes">Reportes</string>
+    <string name="Observación_op">Observación</string>
+    <string name="trabajadores_op">Trabajadores</string>
+    <string name="usuario_op" />
+    <string name="titulo1">Ingrese los datos para poder tener almacenado los registros que vas a guardar en el servidor?</string>
+    <string name="titolo2">No hay datos disponibles</string>
+    <string name="cantidad_de_batch">Cantidad de Batch: </string>
+    <string name="title_activity_panel_cantida_batch">ActivityPanelCantidaBatch</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="action_search">Menú de búsqueda</string>
+    <string name="google_maps_api_key" />
+</resources>

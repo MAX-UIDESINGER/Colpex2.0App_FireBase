@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_registro_login"
+    app:startDestination="@id/nav_presentacion">
+    <fragment
+        android:id="@+id/nav_presentacion"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.FragmentPresentacion"
+        android:label="navpresntacion"
+        tools:layout="@layout/fragment_presentacion" >
+        <action
+            android:id="@+id/action_nav_presentacion_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_presentacion_to_nav_registro"
+            app:destination="@id/nav_registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.FragmentLogin"
+        android:label="navlogin"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_presentacion"
+            app:destination="@id/nav_presentacion" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_registro"
+            app:destination="@id/nav_registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.FragmentRegistro"
+        android:label="navregistro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_nav_registro_to_nav_presentacion"
+            app:destination="@id/nav_presentacion" />
+        <action
+            android:id="@+id/action_nav_registro_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_inicio_contra"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.RecuperarContraseña.Fragment_set_new_password"
+        android:label="fragment_set_new_password"
+        tools:layout="@layout/fragment_set_new_password" >
+        <action
+            android:id="@+id/action_nav_inicio_contra_to_nav_selecciom2"
+            app:destination="@id/nav_selecciom" />
+        <action
+            android:id="@+id/action_nav_inicio_contra_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_credenciales"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.RecuperarContraseña.FragmentForgetPassword"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password">
+        <action
+            android:id="@+id/action_nav_credenciales_to_nav_actualizado2"
+            app:destination="@id/nav_actualizado" />
+        <action
+            android:id="@+id/action_nav_credenciales_to_nav_selecciom2"
+            app:destination="@id/nav_selecciom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_selecciom"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.RecuperarContraseña.Fragment_make_selection"
+        android:label="fragment_make_selection"
+        tools:layout="@layout/fragment_make_selection" >
+        <action
+            android:id="@+id/action_nav_selecciom_to_nav_credenciales2"
+            app:destination="@id/nav_credenciales" />
+        <action
+            android:id="@+id/action_nav_selecciom_to_nav_inicio_contra2"
+            app:destination="@id/nav_inicio_contra" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_actualizado"
+        android:name="com.example.colpex20app_firebase.LoginRegistro.RecuperarContraseña.FragmentSuccessMessaheForgetPasword"
+        android:label="fragment_success_messahe_forget_pasword"
+        tools:layout="@layout/fragment_success_messahe_forget_pasword">
+        <action
+            android:id="@+id/action_nav_actualizado_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+
+</navigation>

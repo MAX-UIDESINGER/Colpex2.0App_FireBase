@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhiteContenido"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginRegistro.RecuperarContraseña.FragmentverifiOTP">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorWhiteContenido"
+                android:layout_marginTop="0dp"
+                app:liftOnScroll="true">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:navigationIcon="@drawable/ic_fluent_dismiss_24_regular">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/colpexvertical"
+                            android:transitionName="Logo_image" />
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_fluent_code_24_regular"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/muli_black"
+                android:text="verificación de código"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#1A1A1A"
+                android:textSize="40sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:textColor="@color/colorEditText"
+                android:text="Ingrese la contraseña de un solo uso enviada el  + 923332225522"
+                android:textAlignment="center"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pin_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:itemCount="6"
+                    app:itemWidth="50dp"
+                    android:height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    app:lineColor="@color/ColorWhiteContenido"
+                    android:itemBackground="@color/button_text_color"
+                    style="@style/PinWidget.PinView"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    app:cursorColor="@color/colorBlack"
+                    app:hideLineWhenFilled="true"
+                    app:itemRadius="5dp"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/ok_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint ="#F7FCD01D"
+                    android:layout_weight="1"
+                    android:elevation="5dp"
+                    android:text="Código de Verificación"
+                    android:textColor="@color/colorBlack"
+                    android:transitionName="transition_login_btn" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:checkable="true"
+    style="?attr/materialCardViewFilledStyle"
+    android:elevation="0dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/colorButtonText">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rald"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/vectoruser"
+                app:civ_border_color="#F1F3F4"
+                app:civ_border_width="2dp" />
+
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/colorButtonText"
+                android:padding="10dp"
+                android:src="@drawable/ic_fluent_chevron_up_24_regular" />
+
+            <TextView
+                android:id="@+id/NameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="name "
+                android:textColor="?android:textColorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaTrabjo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameUser"
+                android:layout_alignParentLeft="false"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-21dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/NameUser"
+                android:layout_toRightOf="@+id/NameUser"
+                android:text=" (Operador)"
+                android:textColor="?android:textColorSecondary" />
+
+            <ImageView
+                android:id="@+id/txvfechatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTrabjo"
+                android:layout_gravity="left"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_fluent_calendar_clock_24_regular"
+                app:tint="@color/colorEditText" />
+
+            <TextView
+                android:id="@+id/txvfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTrabjo"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/txvfechatext"
+                android:layout_toRightOf="@+id/txvfechatext"
+                android:fontFamily="@font/san_francisco"
+                android:text="13/09/2022"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Lote1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_marginLeft="103dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Lote:  "
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvnumerlote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_gravity="left"
+                android:layout_marginStart="-2dp"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/Lote1"
+                android:layout_toRightOf="@+id/Lote1"
+                android:text="0001 "
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#CAC9C9" />
+
+            <TextView
+                android:id="@+id/Reactor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Reactor:  "
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvReactor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/Reactor1"
+                android:layout_toRightOf="@+id/Reactor1"
+                android:fontFamily="@font/san_francisco"
+                android:text="3"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/Batch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvReactor"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Batch:  "
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvBatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvReactor"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toEndOf="@+id/Batch1"
+                android:layout_toRightOf="@+id/Batch1"
+                android:fontFamily="@font/san_francisco"
+                android:text="1"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/FFAInicial1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvBatch"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="FFA Inicial:  "
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txvFFAInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvBatch"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/FFAInicial1"
+                android:layout_toRightOf="@+id/FFAInicial1"
+                android:fontFamily="@font/san_francisco"
+                android:text="3.4"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/TempTrabajo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvFFAInicial"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Temp. Trabajo (Max. 65 º C):  "
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txvTempTrabajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvFFAInicial"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/TempTrabajo1"
+                android:layout_toRightOf="@+id/TempTrabajo1"
+                android:fontFamily="@font/san_francisco"
+                android:text="65"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTempTrabajo_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvFFAInicial"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvTempTrabajo"
+                android:layout_toRightOf="@+id/txvTempTrabajo"
+                android:fontFamily="@font/san_francisco"
+                android:text="ºC"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvTempTrabajo"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+
+            <TextView
+                android:id="@+id/ConcentracionNaOH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Concentracion NaOH (min 14% o 20º Be):  "
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txvConcentracionNaOH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/ConcentracionNaOH1"
+                android:layout_toRightOf="@+id/ConcentracionNaOH1"
+                android:fontFamily="@font/san_francisco"
+                android:text="20"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvConcentracionNaOH_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvConcentracionNaOH"
+                android:layout_toRightOf="@+id/txvConcentracionNaOH"
+                android:fontFamily="@font/san_francisco"
+                android:text="ºBe"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/LoteNaOH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvConcentracionNaOH"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Lote NaOH:  "
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvLoteNaOH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvConcentracionNaOH"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toEndOf="@+id/LoteNaOH1"
+                android:layout_toRightOf="@+id/LoteNaOH1"
+                android:fontFamily="@font/san_francisco"
+                android:text="PT-12910211"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txvLoteNaOH"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="18dp"
+                android:background="#CCC7C7" />
+
+
+            <TextView
+                android:id="@+id/AceiteNeutro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Aceite Neutro:  "
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvAceiteNeutro1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/AceiteNeutro1"
+                android:layout_toRightOf="@+id/AceiteNeutro1"
+                android:fontFamily="@font/san_francisco"
+                android:text="12.306"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_imprimir_op.xml"
+    app:startDestination="@id/fragmentDesgomadoReporte">
+
+    <fragment
+        android:id="@+id/fragmentDesgomadoReporte"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.Reportes.FragmentDesgomadoReporte"
+        android:label="fragment_desgomado_reporte"
+        tools:layout="@layout/fragment_desgomado_reporte" />
+</navigation>

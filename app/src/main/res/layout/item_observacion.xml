@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:checkable="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    style="?attr/materialCardViewFilledStyle"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/colorButtonText">
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rald"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/datos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/san_francisco"
+                android:padding="15dp"
+                android:text="Datos del Lote"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/vectoruser" />
+
+            <ImageView
+                android:id="@+id/CheckmarkIngAArea"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/check_user"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/NameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="67dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="name"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/areaTrabjo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameUser"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="67dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Jefe Producción"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txvLotesnumero1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Nº de Lote: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvLotesnumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvLotesnumero1"
+                android:layout_toRightOf="@+id/txvLotesnumero1"
+                android:fontFamily="@font/san_francisco"
+                android:text="002-2022"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvLotesnumero"
+                android:layout_toRightOf="@+id/txvLotesnumero"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvLotesnumero"
+                android:layout_toRightOf="@+id/txvLotesnumero"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+            <TextView
+                android:id="@+id/txvproducto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvLotesnumero"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Producto: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvproducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvLotesnumero"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toEndOf="@+id/txvproducto1"
+                android:layout_toRightOf="@+id/txvproducto1"
+                android:fontFamily="@font/san_francisco"
+                android:text="Producto"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvLotesnumero"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvproducto"
+                android:layout_toRightOf="@+id/txvproducto"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvLotesnumero"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvproducto"
+                android:layout_toRightOf="@+id/txvproducto"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+            <TextView
+                android:id="@+id/txvcliente1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvproducto"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Cliente: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvcliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvproducto"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvcliente1"
+                android:layout_toRightOf="@+id/txvcliente1"
+                android:fontFamily="@font/san_francisco"
+                android:text="Cliente"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvproducto"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvcliente"
+                android:layout_toRightOf="@+id/txvcliente"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvproducto"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvcliente"
+                android:layout_toRightOf="@+id/txvcliente"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+            <TextView
+                android:id="@+id/txvTonelada1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvcliente"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Tonelaje: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTonelada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvcliente"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvTonelada1"
+                android:layout_toRightOf="@+id/txvTonelada1"
+                android:fontFamily="@font/san_francisco"
+                android:text="Tonelaje:"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvcliente"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTonelada"
+                android:layout_toRightOf="@+id/txvTonelada"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvcliente"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTonelada"
+                android:layout_toRightOf="@+id/txvTonelada"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+            <TextView
+                android:id="@+id/txvfecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvTonelada"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Fecha y Hora de Inicio: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvTonelada"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvfecha1"
+                android:layout_toRightOf="@+id/txvfecha1"
+                android:fontFamily="@font/san_francisco"
+                android:text="Fecha y Hora de Inicio"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:id="@+id/txvNbatch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Nº de Batch: "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvNbatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvfecha"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvNbatch1"
+                android:layout_toRightOf="@+id/txvNbatch1"
+                android:fontFamily="@font/san_francisco"
+                android:text="7"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvfecha"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvNbatch"
+                android:layout_toRightOf="@+id/txvNbatch"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvfecha"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvNbatch"
+                android:layout_toRightOf="@+id/txvNbatch"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+            <TextView
+                android:id="@+id/txvAcidoFosforico1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvNbatch"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Acido Fosfórico (0,05% - 0,10%): "
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txvAcidoFosforico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvNbatch"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvAcidoFosforico1"
+                android:layout_toRightOf="@+id/txvAcidoFosforico1"
+                android:fontFamily="@font/san_francisco"
+                android:text="0.10"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvNbatch"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvAcidoFosforico"
+                android:layout_toRightOf="@+id/txvAcidoFosforico"
+                android:fontFamily="@font/san_francisco"
+                android:text="%"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvNbatch"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_toRightOf="@+id/txvAcidoFosforico_porsentaje"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvNbatch"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_toRightOf="@+id/txvAcidoFosforico_porsentaje"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+            <TextView
+                android:id="@+id/txvTempTrabajo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Temp. Trabajo (30º - 60º C): "
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txvTempTrabajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvTempTrabajo1"
+                android:layout_toRightOf="@+id/txvTempTrabajo1"
+                android:fontFamily="@font/san_francisco"
+                android:text="30"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTempTrabajo_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvTempTrabajo"
+                android:layout_toRightOf="@+id/txvTempTrabajo"
+                android:fontFamily="@font/san_francisco"
+                android:text="ºC"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTempTrabajo_porsentaje"
+                android:layout_toRightOf="@+id/txvTempTrabajo_porsentaje"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvAcidoFosforico_porsentaje"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTempTrabajo_porsentaje"
+                android:layout_toRightOf="@+id/txvTempTrabajo_porsentaje"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+            <TextView
+                android:id="@+id/txvTResidencia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvTempTrabajo_porsentaje"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="T. Residencia (xx min): "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTResidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvTempTrabajo_porsentaje"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/txvTResidencia1"
+                android:layout_toRightOf="@+id/txvTResidencia1"
+                android:fontFamily="@font/san_francisco"
+                android:text="30"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txvTResidencia_porsentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txvTempTrabajo_porsentaje"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/txvTResidencia"
+                android:layout_toRightOf="@+id/txvTResidencia"
+                android:fontFamily="@font/san_francisco"
+                android:text="min"
+                android:textColor="@color/colorPlaceholder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ckecBacht8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvTempTrabajo_porsentaje"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTResidencia_porsentaje"
+                android:layout_toRightOf="@+id/txvTResidencia_porsentaje"
+                android:src="@drawable/ic_fluent_checkmark_24_regular"
+                app:tint="#00C853" />
+
+            <ImageView
+                android:id="@+id/DismissBacht8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                android:layout_below="@+id/txvTempTrabajo_porsentaje"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toEndOf="@+id/txvTResidencia_porsentaje"
+                android:layout_toRightOf="@+id/txvTResidencia_porsentaje"
+                android:src="@drawable/ic_fluent_dismiss_24_regular"
+                app:tint="#D50000" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds">
+
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorButtonText"
+                android:padding="10dp"
+                android:src="@drawable/ic_fluent_chevron_up_24_regular" />
+
+            <LinearLayout
+                android:id="@+id/itemMinuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ivMenu"
+                android:layout_alignTop="@+id/ivMenu"
+                android:layout_alignEnd="@+id/ivMenu"
+                android:layout_alignBottom="@+id/ivMenu"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/item_count"
+                android:backgroundTint="#00C853"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/txvminutos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:text="21 mini"
+                    android:textColor="@color/ColorWhiteContenido"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="Importante* "
+                android:textColor="#00C853"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="46dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="5dp"
+                android:drawableEnd="@drawable/ic_fluent_edit_24_regular"
+                android:padding="11dp"
+                android:title="Editar"
+                app:backgroundTint="@color/colorWhite"
+                app:cornerRadius="60dp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="46dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:drawableEnd="@drawable/ic_fluent_delete_24_regular"
+                android:padding="11dp"
+                android:title="Eliminar"
+                app:backgroundTint="@color/colorWhite"
+                app:cornerRadius="60dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#CAC9C9" />
+
+            <TextView
+                android:id="@+id/datos1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/san_francisco"
+                android:padding="15dp"
+                android:text="Observación"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txvLotesobservacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datos1"
+                android:layout_gravity="left"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/san_francisco"
+                android:text="Descripción: "
+                android:textSize="15sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datos1"
+                android:layout_marginRight="17dp"
+                android:layout_toEndOf="@+id/txvLotesobservacion"
+                android:layout_toRightOf="@+id/txvLotesobservacion">
+
+                <TextView
+                    android:id="@+id/txvLotestext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datos1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@+id/txvLotesobservacion"
+                    android:layout_toRightOf="@+id/txvLotesobservacion"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="  No hay observación"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="15sp" />
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

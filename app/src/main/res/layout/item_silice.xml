@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/cart_button_bg_blanco">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rald"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/datos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_toStartOf="@+id/btnDelete"
+                    android:fontFamily="@font/san_francisco"
+                    android:padding="0dp"
+                    android:text="Datos de Lote Silice"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    app:cornerRadius="60dp"
+                    android:layout_width="46dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_fluent_edit_24_regular"
+                    android:padding="10dp" />
+
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    app:cornerRadius="60dp"
+                    android:layout_width="46dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="60dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_fluent_delete_24_regular"
+                    android:padding="10dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:id="@+id/txvLotesnumero1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Lote: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvLotesnumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/txvLotesnumero1"
+                    android:layout_toRightOf="@+id/txvLotesnumero1"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="lote"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvfechatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvLotesnumero"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="7dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Fecha y Hora: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txvfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvLotesnumero"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="47dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_toEndOf="@+id/txvfechatext"
+                    android:layout_toRightOf="@+id/txvfechatext"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="13/09/2022"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--app:cardUseCompatPadding="true"-->
+
+
+    </RelativeLayout>
+</LinearLayout>

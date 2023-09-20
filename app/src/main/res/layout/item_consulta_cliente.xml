@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/cart_button_bg_blanco">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rald"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/datos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:padding="15dp"
+                    android:text="Datos de Cliente"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="80dp"
+                    android:drawableRight="@drawable/ic_fluent_edit_24_regular"
+                    android:elevation="3dp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:cornerRadius="10dp"
+                    tools:ignore="UnknownId" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableRight="@drawable/ic_fluent_delete_24_regular"
+                    android:elevation="3dp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:cornerRadius="10dp"
+                    tools:ignore="UnknownId" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txvLotesnumero1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Nombre del Cliente: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvLotesnumero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_toEndOf="@+id/txvLotesnumero1"
+                    android:layout_toRightOf="@+id/txvLotesnumero1"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Cliente:"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txvproducto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvLotesnumero"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Correo: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvproducto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvLotesnumero"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_toEndOf="@+id/txvproducto1"
+                    android:layout_toRightOf="@+id/txvproducto1"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="gamil.com:"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txvcliente1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvproducto"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Pais: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvcliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvproducto"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_toEndOf="@+id/txvcliente1"
+                    android:layout_toRightOf="@+id/txvcliente1"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Peru"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvcliente3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvcliente"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Ciudad: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txvPais"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txvcliente"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/txvcliente3"
+                    android:layout_toRightOf="@+id/txvcliente1"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Lima"
+                    android:textColor="@color/colorPlaceholder"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txvfechatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="Fecha y Hora: "
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txvfecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_toEndOf="@+id/txvfechatext"
+                    android:layout_toRightOf="@+id/txvfechatext"
+                    android:fontFamily="@font/san_francisco"
+                    android:text="13/09/2022"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginRegistro.FragmentPresentacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+
+            android:src="@drawable/colpexvertical"
+            android:transitionName="Logo_image"
+            android:translationZ="50dp" />
+
+
+        <!--- <Button
+             android:id="@+id/login_btn3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_marginTop="30dp"
+             android:layout_marginRight="30dp"
+             android:layout_marginBottom="10dp"
+             android:background="@color/colorWhite"
+             android:elevation="3dp"
+             android:gravity="center"
+             android:text="¿Cómo trabajamos?"
+             android:textColor="@color/colorBlack"
+             android:transitionName="transition_login_btn" /> -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/muli_black"
+            android:gravity="center_horizontal"
+            android:text="HOLA! Haz"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/ColorWhiteContenido"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/muli_black"
+            android:gravity="center_horizontal"
+            android:text="una Selección"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorButtonText"
+            android:textSize="35sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textColor="@color/ColorWhiteContenido"
+            android:text="¿Le ayudaremos a hacer crecer su experiencia usando el servicio en línea?"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint ="#F7FCD01D"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:text="iniciar sesión"
+                android:textColor="@color/colorBlack"
+                android:transitionName="transition_login_btn" />
+
+            <Button
+                android:id="@+id/registro_btn"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint ="#F7FCD01D"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:text="Regístrate"
+                android:textColor="@color/colorBlack"
+                android:transitionName="transition_login_btn" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

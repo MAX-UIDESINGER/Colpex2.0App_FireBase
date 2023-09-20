@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.FragmenContenido.FragmentInicio"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_produccion"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.FragmenContenido.FragmentProduccion"
+        android:label="@string/producci_n"
+        tools:layout="@layout/fragment_produccion" >
+        <action
+            android:id="@+id/action_nav_produccion_to_panelAgregarDatos"
+            app:destination="@id/panelAgregarDatos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_observacion"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.FragmenContenido.FragmentObservacion"
+        android:label="@string/observaci_n"
+        tools:layout="@layout/fragment_observacion" />
+
+    <fragment
+        android:id="@+id/nav_trabajadores"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.FragmenContenido.FragmentTrabajores"
+        android:label="@string/trabajadores"
+        tools:layout="@layout/fragment_trabajores" />
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.FragmenContenido.FragmentUsuario"
+        android:label="@string/usuario"
+        tools:layout="@layout/fragment_usuario" />
+    <activity
+        android:id="@+id/panelAgregarDatos"
+        android:name="com.cdp.colpexapp_firebase.JefeProducion.PanelAgregarDatos"
+        android:label="activity_panel_agregar_datos"
+        tools:layout="@layout/activity_panel_agregar_datos" />
+
+
+</navigation>

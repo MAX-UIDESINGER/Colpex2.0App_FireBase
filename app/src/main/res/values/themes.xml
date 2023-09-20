@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Theme.Colpex20App_FireBase" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryContainer">#F3FCD01D</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <item name="colorSurface">#FCFFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/ColorWhiteContenido</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- <item name="android:windowTranslucentStatus">true</item>-->
+        <!-- <item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item> -->
+    </style>
+
+    <style name="AppThemenobar" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorSecondaryContainer">#F3FCD01D</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <item name="colorSurface">#FDFFFFFF</item>
+        <!-- Status text bar color. -->
+        <item name="actionBarTheme">@style/colorTitle</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorWhite</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <!-- <item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+
+    <!-- Status bar color. -->
+    <style name="colorTitle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="titleTextColor">@color/colorBlack</item>
+    </style>
+
+    <!-- Menu Style -->
+    <style name="navigationThema">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <!-- <item name="colorControlHighlight">@color/colorBlack</item>  -->
+    </style>
+
+    <style name="AppToolAmarillo" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorSecondaryContainer">#F3FCD01D</item>
+        <item name="colorPrimaryDark">#0E0E0E</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <item name="colorSurface">#FCFFFFFF</item>
+        <!-- Status bar color. -->
+        <!--<item name="android:statusBarColor" tools:targetApi="l">@color/colorBlack</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>-->
+        <!--  <item name="android:windowTranslucentStatus">true</item> -->
+    </style>
+
+    <style name="App_color_White" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorSecondaryContainer">#F3FCD01D</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <item name="colorSurface">#FCFFFFFF</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorTextWhite</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="Theme.Colpex20App_FireBase.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TTheme.Colpex20App_FireBase.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Colpex20App_FireBase.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_op"
+    app:startDestination="@id/nav_inicio_op">
+    <fragment
+        android:id="@+id/nav_inicio_op"
+        android:name="com.example.colpex20app_firebase.JefeProducion.FragmenContenido.FragmentInicio"
+        android:label="@string/inicio_op"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_observacion_op"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.FragmenContenido_op.FragmentObservacion_operado"
+        android:label="observacion_op"
+        tools:layout="@layout/fragment_observacion_op" />
+    <fragment
+        android:id="@+id/nav_trabajadores_op"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.FragmenContenido_op.FragmentTrabajores_op"
+        android:label="trabajores_op"
+        tools:layout="@layout/fragment_trabajores_op" />
+    <fragment
+        android:id="@+id/nav_reporte_op"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.FragmenContenido_op.FragmentReporteDocument"
+        android:label="fragment_reporte_document"
+        tools:layout="@layout/fragment_reporte_document" />
+
+    <fragment
+        android:id="@+id/nav_usuario_op"
+        android:name="com.example.colpex20app_firebase.OperadorResponsable.FragmenContenido_op.FragmentUsuario_op"
+        android:label="@string/usuario_op"
+        tools:layout="@layout/fragment_usuario_op" />
+
+
+</navigation>

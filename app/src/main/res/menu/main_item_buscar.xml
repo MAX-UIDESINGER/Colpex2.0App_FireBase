@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search_menuNLote"
+        android:icon="@drawable/ic_fluent_search_24_regular"
+        android:title="Menú de búsqueda"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/delete_All"
+        android:enabled="true"
+        android:icon="@drawable/ic_fluent_delete_24_regular"
+        android:title="Eliminar Todos" />
+
+
+</menu>
+
+

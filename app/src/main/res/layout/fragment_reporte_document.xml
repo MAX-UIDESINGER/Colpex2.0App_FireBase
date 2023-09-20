@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhiteContenido"
+    tools:context=".OperadorResponsable.FragmenContenido_op.FragmentReporteDocument">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/report_anim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:text="¡Hola! haz clic en el botón en las casillas y se descargara el archivo PDF"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#CAC9C9" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/light"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/ReporLote"
+                            style="?attr/materialCardViewFilledStyle"
+                            android:layout_width="150dp"
+                            android:checkable="true"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/colorButtonText"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_fluent_document_pdf_24_regular"
+                                    app:tint="#D50000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/muli_regular"
+                                    android:text="Lote"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="Descarge su archivo PDF"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/ReporDesgomado"
+                            style="?attr/materialCardViewFilledStyle"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:checkable="true"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/colorButtonText"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_fluent_document_pdf_24_regular"
+                                    app:tint="#D50000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/muli_regular"
+                                    android:text="@string/Desgomado"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="Descarge su archivo PDF"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/ReporNeutralizado"
+                            style="?attr/materialCardViewFilledStyle"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:checkable="true"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/colorButtonText"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_fluent_document_pdf_24_regular"
+                                    app:tint="#D50000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/muli_regular"
+                                    android:text="@string/Neutralizado"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="Descarge su archivo PDF"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/ReporBlanqueado"
+                            style="?attr/materialCardViewFilledStyle"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:checkable="true"
+                            android:layout_margin="10dp"
+                            android:backgroundTint="@color/colorButtonText"
+                            app:cardCornerRadius="20dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_fluent_document_pdf_24_regular"
+                                    app:tint="#D50000" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/muli_regular"
+                                    android:text="@string/Blanqueado"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="Descarge su archivo PDF"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

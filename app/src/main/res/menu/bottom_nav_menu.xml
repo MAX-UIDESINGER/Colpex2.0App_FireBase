@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_fluent_home_24_regular"
+        android:title="@string/inicio"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+    <item
+        android:id="@+id/nav_produccion"
+        android:icon="@drawable/ic_fluent_clipboard_text_ltr_24_regular"
+        android:title="@string/producci_n"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+    <item
+        android:id="@+id/nav_observacion"
+        android:icon="@drawable/ic_fluent_clipboard_checkmark_24_regular"
+        android:title="@string/observaci_n"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+    <item
+        android:id="@+id/nav_trabajadores"
+        android:icon="@drawable/ic_fluent_notepad_person_24_regular"
+        android:title="@string/trabajadores"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/nav_usuario"
+        android:icon="@drawable/ic_fluent_person_24_regular"
+        android:title="@string/usuario"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+       <!-- app:cnb_backgroundColor="@color/colorPrimary"/> -->
+
+</menu>

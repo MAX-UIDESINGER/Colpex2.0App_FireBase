@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSplashSreen">
+
+    <ImageView
+        android:id="@+id/colpexAceite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondoprincipal" />
+
+    <ImageView
+        android:id="@+id/logocolpex"
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="223dp"
+        android:layout_marginBottom="194dp"
+        android:transitionName="Logo_image"
+        app:layout_constraintBottom_toTopOf="@+id/Mensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/colpexvertical" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_scale="@integer/dialogplus_animation_default_duration"
+        app:lottie_rawRes="@raw/cargaslider"
+        app:layout_constraintEnd_toEndOf="@+id/logocolpex"
+        app:layout_constraintStart_toStartOf="@+id/logocolpex"
+        app:layout_constraintTop_toBottomOf="@+id/logocolpex"
+        />
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logocolpex"
+        android:layout_marginBottom="91dp"
+        android:gravity="center"
+        android:text="copyright © 2022 colpex S.A.C"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logocolpex" />
+
+    <TextView
+        android:id="@+id/Mensaje2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mensaje"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Todos los derechos Resvados.Polica de Privacidad"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/colpexAceite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mensaje"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 # APLICATIVO MÓVIL COLPEX 2.0
 [![presentaci-n-Proyecto-final-figuras-geometricas-azul.jpg](https://i.postimg.cc/Qtzp17yK/presentaci-n-Proyecto-final-figuras-geometricas-azul.jpg)](https://postimg.cc/0MpMqzx9)
-## descripción 
+
+## Descripción 
 El Aplicativo Móvil COLPEX 2.0 es una solución altamente especializada y avanzada diseñada específicamente para optimizar y simplificar el proceso de registro de lotes en las operaciones de Desgomado, Neutralizado y Blanqueado llevadas a cabo en COLPEX. Esta aplicación ha sido diseñada con el propósito de mejorar la eficiencia y la precisión de estos procesos críticos dentro de la entidad.
 
 ## Versión  de la aplicación 

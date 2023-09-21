@@ -36,6 +36,33 @@ La versión 2.0 de la aplicación COLPEX representa una evolución significativa
 | 2.0.x   | :white_check_mark: |
 | 1.0.x   | :white_check_mark: |
 
+#### Android version that supports the colpex application:
+
+| Name                       | Version       | Supported          |
+| -------------------------- | ------------- | ------------------ |
+| ANDROID 1.0                | 1.0 - 1.1     | :x:                |
+| ANDROID CUPCAKE            | 1.5           | :x:                |
+| ANDROID DONUT              | 1.6           | :x:                |
+| ANDROID ECLAIR             | 2.0 - 2.1     | :x:                |
+| ANDROID FROYO              | 2.2 - 2.2.3   | :x:                |
+| ANDROID GINGERBREAD        | 2.3 - 2.3.7   | :x:                |
+| ANDROID HONEYCOMB          | 3.0 - 3.2.6   | :x:                |
+| ANDROID ICE CREAM SANDWICH | 4.0 - 4.0.4   | :x:                |
+| ANDROID JELLY BEAN         | 4.1 - 4.3.1   | :x:                |
+| ANDROID KITKAT             | 4.4.4         | :white_check_mark: |
+| ANDROID LOLLIPOP           | 5.1.1         | :white_check_mark: |
+| ANDROID MARSHMALLOW        | 6.0 - 6.0.1   | :white_check_mark: |
+| ANDROID NOUGAT             | 7.0 - 7.1.2   | :white_check_mark: |
+| ANDROID OREO               | 8.0 - 8.1     | :white_check_mark: |
+| ANDROID PIE                | 9.0           | :white_check_mark: |
+| ANDROID 10                 | 10.0          | :white_check_mark: |
+| ANDROID 11                 | 11.0          | :white_check_mark: |
+| ANDROID 12                 | 12.0          | :white_check_mark: |
+| ANDROID 12L                | 12.1          | :white_check_mark: |
+| ANDROID 13                 | 13.0          | :white_check_mark: |
+
+
+
 ## Características
 * Interfaz Especializada: COLPEX 2.0 presenta una interfaz de usuario diseñada de manera específica para el registro de lotes en las etapas de Desgomado, Neutralizado y Blanqueado. Esto garantiza una experiencia de usuario intuitiva y enfocada en las necesidades de los operadores.
 

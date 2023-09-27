@@ -1,5 +1,5 @@
 # COLPEX 2.0 MOBILE APPLICATION
-[![presentaci-n-Proyecto-final-figuras-geometricas-azul.jpg](https://i.postimg.cc/Qtzp17yK/presentaci-n-Proyecto-final-figuras-geometricas-azul.jpg)](https://postimg.cc/0MpMqzx9)
+[![image.png](https://i.postimg.cc/tgsbJ45b/image.png)](https://postimg.cc/CZpX6YXr)
 
 ## Description
 The COLPEX 2.0 Mobile Application is a highly specialized and advanced solution designed specifically to optimize and simplify the batch registration process in Degumming, Neutralizing and Bleaching operations carried out at COLPEX. This application has been designed with the purpose of improving the efficiency and accuracy of these critical processes within the entity.
